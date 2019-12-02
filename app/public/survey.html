@@ -5,8 +5,110 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Survey</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <body>
+
+  <nav>
+    <div class="nav-wrapper purple darken-1">
+      <a href="#" class="brand-logo center">Friend Finder</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/">Home</a></li>
+        <li><a href="/survey">Survey</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="divider"></div>
+    <div class="section">
+      <h5>Question 1</h5>
+      <p>Your mind is always buzzing with unexplored ideas and plans.</p>
+      <div class="input-field col s12">
+        <select>
+          <option value="" disabled selected>Choose your option</option>
+          <option value="1">1 Strongly Disagree</option>
+          <option value="2">2 Somewhat Disagree</option>
+          <option value="3">3 Neutral</option>
+          <option value="4">4 Somewhat Agree</option>
+          <option value="5">5 Strongly Agree</option>
+        </select>
+        <label></label>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="section">
+      <h5>Question 2</h5>
+      <p>Generally speaking, you rely more on your experience than your imagination.</p>
+      <div class="input-field col s12">
+        <select>
+          <option value="" disabled selected>Choose your option</option>
+          <option value="1">1 Strongly Disagree</option>
+          <option value="2">2 Somewhat Disagree</option>
+          <option value="3">3 Neutral</option>
+          <option value="4">4 Somewhat Agree</option>
+          <option value="5">5 Strongly Agree</option>
+        </select>
+        <label></label>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="section">
+      <h5>Question 3</h5>
+      <p>You find it easy to stay relaxed and focused even when there is some pressure.</p>
+      <div class="input-field col s12">
+        <select>
+          <option value="" disabled selected>Choose your option</option>
+          <option value="1">1 Strongly Disagree</option>
+          <option value="2">2 Somewhat Disagree</option>
+          <option value="3">3 Neutral</option>
+          <option value="4">4 Somewhat Agree</option>
+          <option value="5">5 Strongly Agree</option>
+        </select>
+        <label></label>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="section">
+      <h5>Question 4</h5>
+      <p>You rarely do something just out of sheer curiosity.</p>
+      <div class="input-field col s12">
+        <select>
+          <option value="" disabled selected>Choose your option</option>
+          <option value="1">1 Strongly Disagree</option>
+          <option value="2">2 Somewhat Disagree</option>
+          <option value="3">3 Neutral</option>
+          <option value="4">4 Somewhat Agree</option>
+          <option value="5">5 Strongly Agree</option>
+        </select>
+        <label></label>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="section">
+      <h5>Question 5</h5>
+      <p>People can rarely upset you.</p>
+      <div class="input-field col s12">
+        <select>
+          <option value="" disabled selected>Choose your option</option>
+          <option value="1">1 Strongly Disagree</option>
+          <option value="2">2 Somewhat Disagree</option>
+          <option value="3">3 Neutral</option>
+          <option value="4">4 Somewhat Agree</option>
+          <option value="5">5 Strongly Agree</option>
+        </select>
+        <label></label>
+      </div>
+    </div>
+  </div>
   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('select')
+        var instances = M.FormSelect.init(elems)
+      })
+  </script>
 </body>
 </html>
