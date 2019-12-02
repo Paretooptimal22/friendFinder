@@ -1,7 +1,7 @@
-const path = require(`path`)
+const { join } = require(`path`)
 
 module.exports = app => {
   app.get(`/`, (req, res) => {
-    res.send(`GET all things`)
+    res.sendFile(join(__dirname, `../public/home.html`))
   })
 }
