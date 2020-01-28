@@ -11,7 +11,7 @@
 <body>
 
   <nav>
-    <div class="nav-wrapper purple darken-1">
+    <div class="nav-wrapper teal">
       <a href="#" class="brand-logo center">Friend Finder</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="/">Home</a></li>
@@ -109,11 +109,11 @@
       <div class="input-field col s12">
         <select>
           <option value="" disabled selected>Choose your option</option>
-          <option id="one" value="1">1 Strongly Disagree</option>
-          <option id="two" value="2">2 Somewhat Disagree</option>
-          <option id="three" value="3">3 Neutral</option>
-          <option id="four" value="4">4 Somewhat Agree</option>
-          <option id="five" value="5">5 Strongly Agree</option>
+          <option value="1">1 Strongly Disagree</option>
+          <option value="2">2 Somewhat Disagree</option>
+          <option value="3">3 Neutral</option>
+          <option value="4">4 Somewhat Agree</option>
+          <option value="5">5 Strongly Agree</option>
         </select>
         <label></label>
       </div>
@@ -121,7 +121,7 @@
     <div class="divider"></div>
     <div class="section">
       <div class="center-align">
-        <a id="submitBtn" class="waves-effect waves-light btn-large purple accent-1"><i
+        <a id="submitBtn" class="waves-effect waves-light btn-large teal accent-4"><i
             class="material-icons right">send</i>Submit</a>
       </div>
     </div>
@@ -129,6 +129,8 @@
   
   <script>
     document.getElementById(`submitBtn`).addEventListener(`click`, e => {
+      e.preventDefault()
+      
 
     })
   
@@ -137,9 +139,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-        var elems = document.querySelectorAll('select')
-        var instances = M.FormSelect.init(elems)
-      })
+      var elems = document.querySelectorAll('select')
+      var instances = M.FormSelect.init(elems)
+    })
   </script>
 </body>
 </html>
